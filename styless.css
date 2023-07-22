@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  z-index: 100;
+  position: fixed;
+  height: fit-content;
+  padding: 0.5rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(245, 236, 220);
+  box-shadow: 5px 10px 50px rgba(0, 0, 0, 0.301);
+}
+.center {
+  width: 1300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+.logo a {
+  font-size: 2.5rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin-left: 50px;
+}
+.default {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  padding: 0px 20px;
+  color: black;
+  transition: 0.4s;
+  font-weight: 400;
+}
+.navbar ul li a:hover {
+  color: rgb(0, 140, 255);
+}
+.menuBtn img {
+  width: 30px;
+  height: 30px;
+  display: none;
+  cursor: pointer;
+}
+.menuBtn {
+  position: relative;
+  top: 3px;
+  right: 20px;
+}
+.page1 {
+  padding: 7rem 0rem 0rem 0rem;
+}
+.image img {
+  height: 350px;
+  width: 400px;
+}
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.myself {
+  align-items: flex-start;
+}
+.myself h1 {
+  font-size: 2.4rem;
+  margin: 1rem 0;
+  font-weight: 300;
+}
+.myself p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.myself button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px;
+  margin: 20px 10px;
+  border-radius: 7px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.myself button:hover {
+  background-color: rgba(157, 210, 214, 0.781);
+}
+.page2 {
+  padding: 5rem 2rem 1rem 2rem;
+}
+.page2 h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.img2 img {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+}
+.aboutcontent {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutmyself {
+  /* width:600px; */
+  margin-right: 30px;
+  text-align: center;
+}
+.aboutcontent p {
+  color: rgb(66, 66, 66);
+  line-height: 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.aboutcontent p span {
+  font-size: 3rem;
+}
+.aboutmyself button {
+  padding: 5px 20px;
+  border-radius: 12px;
+  margin: 20px;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.4s all ease;
+}
+.aboutmyself button:hover {
+  background-color: rgba(126, 171, 223, 0.6);
+}
+.page3 {
+  padding: 5rem;
+  padding-bottom: 0;
+  height:100vh;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.box img {
+  height: 100px;
+  width: 100px;
+}
+.box h1 {
+  margin: 10px;
+}
+.inbox {
+  padding: 20px;
+  background-color: rgba(202, 202, 202, 0.664);
+  border-radius: 10px;
+  box-shadow: 5px 10px 40px rgba(56, 56, 56, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  cursor: default;
+  transition: 0.3s all ease;
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+}
+.inbox p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 25px;
+  color: rgb(0, 0, 0);
+}
+.inbox:hover {
+  transform: scale(1.03, 1.03);
+  box-shadow: 5px 10px 50px rgba(56, 56, 56, 0.8);
+}
+.title {
+  margin: 40px auto;
+
+  margin-top: 0;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 200;
+}
+@media (max-width: 1024px) {
+  .menuBtn img {
+    display: block;
+  }
+  .default {
+    width: 100%;
+    position: absolute;
+    top: -40rem;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navbar ul li {
+    margin: 5px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .logo a {
+    margin-left: 10px;
+  }
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s all ease;
+  }
+  .nav-active {
+    transition: 0.25s all ease;
+    top: 4rem;
+  }
+  .nav-active2 {
+    padding-bottom: 10rem;
+  }
+  .image img {
+    width: 300px;
+    height: 250px;
+  }
+  .myself {
+    align-items: flex-start;
+    text-align: start;
+  }
+  .myself h1 {
+    font-size: 2rem;
+  }
+  .myself p {
+    font-size: 1.3rem;
+  }
+  .myself button {
+    font-size: 0.8rem;
+    margin: 20px 20px 0 0;
+  }
+  .page2 h1 {
+    font-size: 2rem;
+  }
+  .aboutcontent {
+    flex-direction: column;
+  }
+  .aboutcontent img {
+    margin: 30px;
+    width: 550px;
+    height: 400px;
+  }
+  .box {
+    flex-direction: column;
+  }
+  .inbox {
+    margin: 20px 0;
+    width: 470px;
+  }
+  .aboutmyself button {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 10px;
+    margin: 20px 10px;
+    margin-bottom: 0;
+    border-radius: 7px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+}
+@media (max-width: 768px) {
+
+  .intro {
+    flex-direction: column;
+  }
+  .page1 {
+    padding: 4rem 0 0 0;
+  }
+  .myself {
+    text-align: center;
+  }
+  .image img {
+    margin-top: 50px;
+  }
+  .aboutcontent {
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutcontent img {
+    width: 375px;
+    height: 280px;
+    margin-top: 40px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+  @media (max-width: 500px) {
+    .aboutcontent p {
+      font-size: 0.4rem;
+      line-height: 19px;
+      margin-left: 30px;
+    }
+    .aboutcontent p span {
+      font-size: 1.5rem;
+    }
+    .aboutcontent img {
+      width: 250px;
+      height: 175px;
+      border-radius: 7px;
+      margin-top: 20px;
+    }
+    .inbox {
+      margin: 20px 0;
+      width: 300px;
+    }
+  }
+
+  .page2 {
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+  .page3 {
+    padding: 1rem;
+  }
+  .title {
+    margin-top: 70px;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
